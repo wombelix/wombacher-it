@@ -15,7 +15,7 @@ SPDX-License-Identifier: CC0-1.0
 
 ## Source
 
-The primary location is: `https://git.sr.ht/~wombelix/wombacher-it <https://git.sr.ht/~wombelix/wombacher-it>`_
+The primary location is: [https://git.sr.ht/~wombelix/wombacher-it](https://git.sr.ht/~wombelix/wombacher-it)
 
 Mirrors of the repository are available on
 [Codeberg](https://codeberg.org/wombelix/wombacher-it),
