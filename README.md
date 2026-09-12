@@ -9,6 +9,7 @@ SPDX-License-Identifier: CC0-1.0
 <!-- markdownlint-disable MD013 -->
 [![REUSE status](https://api.reuse.software/badge/github.com/wombelix/wombacher-it)](https://api.reuse.software/info/github.com/wombelix/wombacher-it)
 [![Mirror](https://github.com/wombelix/wombacher-it/actions/workflows/mirror.yml/badge.svg)](https://github.com/wombelix/wombacher-it/actions/workflows/mirror.yml)
+[![Deploy](https://github.com/wombelix/wombacher-it/actions/workflows/deploy.yml/badge.svg)](https://github.com/wombelix/wombacher-it/actions/workflows/deploy.yml)
 <!-- markdownlint-enable MD013 -->
 
 ## Table of Contents
