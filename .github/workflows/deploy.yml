@@ -1,0 +1,33 @@
+# SPDX-FileCopyrightText: 2026 Dominik Wombacher <dominik@wombacher.cc>
+#
+# SPDX-License-Identifier: CC0-1.0
+
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/**'
+      - '.params2env.yaml'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Load secrets from SSM
+        uses: wombelix/build-helper-scripts/.github/actions/load-ssm-secrets@main
+
+      - name: Deploy to SFTP target
+        uses: wombelix/build-helper-scripts/.github/actions/sftp-deploy@main
+        with:
+          source: ./public
